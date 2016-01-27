@@ -17,7 +17,7 @@ Substitutions are defined for each attribute of each html tag as a JSON file(tag
 ```
 parse.js:
 	string getTag(string):takes input html file as string searches for html tags through regular expression 'tagRegex = /<\/?[^>]*>+/g;'. and for each tag parseTag() is called.
-string parseTag(string):takes the tag as input Ex."<body backgrond="some_val" font="val">". it determines the name of the tag by looking at first word and if its a valid tag_name entry in tags.json calls tagToJson() to get a tag.json object. attributes.json:
+string parseTag(string):takes the tag as input'. it determines the name of the tag by looking at first word and if its a valid tag_name entry in tags.json calls tagToJson() to get a tag.json object. attributes.json:
 
 ```
 
